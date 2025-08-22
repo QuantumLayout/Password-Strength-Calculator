@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <title>Password Strength Calculator</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+    <h1>Password Strength Calculator</h1>
+    <input type="text" id="password" placeholder="Enter your password">
+    <button onclick="calculateStrength()" id="button">Calculate Strength</button>
+
+    <div class="result">
+      <p><span class="label">Password:</span> <span id="displayPassword"></span></p>
+      <p><span class="label">Estimated combinations:</span> <span id="combinations"></span></p>
+      <p><span class="label">Estimated brute-force time:</span> <span id="bruteTime"></span></p>
+      <p><span class="label">Password strength:</span> <span id="passwordStrength"></span></p>
+    </div>
+    <p class="disclaimer">DISCLAIMER: This is just a project and its results aren't 100% accurate (especially for those passwords that are vulnerable to dictioanry attacks). This project shall NOT be used as an accurate source for password strength verification.</p>
+    </div>
+  </body>
+</html>
